@@ -23,7 +23,7 @@ public class AnswerQuestion {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "question_id", nullable = false, foreignKey = @ForeignKey(name = "fk_answer_question"))
-    private QuestionLesson question;
+    private LessonQuestion question;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "teacher_id", nullable = false, foreignKey = @ForeignKey(name = "fk_answer_question_teacher"))
