@@ -17,14 +17,15 @@ public class LessonQuestion {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id_lesson_question", nullable = false)
     private Long id;
 
     @Lob
-    @Column(nullable = false)
+    @Column(name = "ds_question", nullable = false)
     private String question;
 
     @CreationTimestamp
-    @Column(nullable = false)
+    @Column(name = "date_question", nullable = false)
     private LocalDate dateQuestion;
 
     @ManyToOne(fetch = FetchType.LAZY)

@@ -17,6 +17,7 @@ public class StudentCourse {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id_student_course", nullable = false)
     private Long id;
 
     @CreationTimestamp

@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.web.bind.annotation.CookieValue;
 
 @Entity
 @Table(name = "lesson_progress")
@@ -14,6 +15,7 @@ public class LessonProgress {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id_lesson_progress", nullable = false)
     private Long id;
 
     @Column(name = "fl_completed", nullable = false)

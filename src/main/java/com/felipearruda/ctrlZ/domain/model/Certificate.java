@@ -16,6 +16,7 @@ public class Certificate {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id_certificate", nullable = false)
     private Long id;
 
     @Column(name = "issued_in", nullable = false)

@@ -14,12 +14,13 @@ public class Lesson {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id_lesson", nullable = false)
     private Long id;
 
     @Column(nullable = false, length = 100)
     private String name;
 
-    @Column(nullable = false, length = 255)
+    @Column(name = "link_url", nullable = false)
     private String linkUrl;
 
     @ManyToOne(fetch = FetchType.LAZY)

@@ -17,6 +17,7 @@ public class CourseEvaluation {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id_course_evaluation", nullable = false)
     private Long id;
 
     @Lob
@@ -27,7 +28,7 @@ public class CourseEvaluation {
     private Integer rating;
 
     @CreationTimestamp
-    @Column(nullable = false)
+    @Column(name = "evaluation_date", nullable = false)
     private LocalDate evaluationDate;
 
     @ManyToOne(fetch = FetchType.LAZY)

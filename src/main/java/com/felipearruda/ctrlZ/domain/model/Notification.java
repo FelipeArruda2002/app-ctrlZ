@@ -14,6 +14,7 @@ public class Notification {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id_notification", nullable = false)
     private Long id;
 
     @Column(nullable = false, length = 100)

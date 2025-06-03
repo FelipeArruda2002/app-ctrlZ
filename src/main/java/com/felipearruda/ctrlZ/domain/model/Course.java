@@ -19,6 +19,7 @@ public class Course {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id_course", nullable = false)
     private Long id;
 
     @Column(nullable = false, length = 100)
@@ -29,9 +30,10 @@ public class Course {
     private String description;
 
     @CreationTimestamp
-    @Column(nullable = false)
+    @Column(name = "created_at", nullable = false, updatable = false)
     private LocalDate createdAt;
 
+    @Column(name = "updated_at")
     private LocalDate updatedAt;
 
     @ManyToOne(fetch = FetchType.LAZY)

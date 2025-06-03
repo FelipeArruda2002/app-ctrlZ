@@ -17,6 +17,7 @@ public class EvaluationAttempt {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id_evaluation_attempt", nullable = false)
     private Long id;
 
     @Column(name = "fl_passed", nullable = false)

@@ -15,6 +15,7 @@ public class SupplementaryMaterial {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id_supplementary_material", nullable = false)
     private Long id;
 
     @Column(nullable = false, length = 100)

@@ -14,6 +14,7 @@ public class Teacher {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id_teacher", nullable = false)
     private Long id;
 
     @Column(name = "first_name", nullable = false, length = 80)
@@ -25,6 +26,6 @@ public class Teacher {
     @Column(length = 100, nullable = false)
     private String email;
 
-    @Column(length = 255, nullable = false)
+    @Column(nullable = false)
     private String password;
 }
