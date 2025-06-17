@@ -1,4 +1,4 @@
-package com.felipearruda.ctrlZ.domain.model;
+package com.felipearruda.ctrlZ.student;
 
 import com.felipearruda.ctrlZ.domain.enums.Gender;
 import jakarta.persistence.*;
